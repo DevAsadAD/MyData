@@ -1,0 +1,685 @@
+<html>
+    <head>
+        <title> Home </title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .main-div {
+                background: #bdd7ee;
+            }
+            .accordion {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+                background-color: #ccc; 
+            }
+
+            .panel {
+                padding: 0 18px;
+                display: none;
+                background-color: white;
+                overflow: hidden;
+            }
+            .loginSection {
+                cursor: pointer;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .top-header {
+                height: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .top-header h1 {
+                margin-top: 30px;
+            }
+            .margin-top-20 {
+                font-family: 'Libre Baskerville', serif;
+                margin: 0;
+            }
+            .search-bar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            
+
+        //Responsive
+        @media screen and (max-width: 1200px) {
+        }
+            
+        @media screen and (max-width: 634px) {
+            .bg-cvr-select{
+                width:100%;
+            }
+        }
+
+             /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+        @media screen and (min-width: 601px) {
+/*          .margin-top-20 {
+            font-size: 60px;
+          }*/
+
+          .margin-top-20-footer {
+            padding-top: 6px;
+            font-size: 60px;
+          }
+        }
+
+        /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 600px) {
+          .margin-top-20 {
+            font-size: 36px;
+          }
+
+           .margin-top-20-footer {
+            padding-top: 6px;
+            font-size: 38px;
+          }
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid main-div">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12  header1 top-header">
+                    <h1 class="margin-top-20 text-center display-4"> <b><span class="font-white">TEASHER</span><span class="font-lightblue">VISTA</span></b></h1>
+                </div>
+                <div class="loginSection">
+                    <span class="font-white" style="float:right;">Login</span>
+                </div>
+            </div>
+            <div class="row header2 search-bar">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="container col-lg-4 col-md-8 col-12">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                          <div class="input-group-append">
+                            <button class="btn btn-success" type="submit">Search</button>
+                          </div>
+                        </div>                        
+                        
+                        
+<!--                        <div class="input-group ">
+                            <input type="text" style="    border-radius: 0px;" class="form-control" placeholder="Key Words">
+                            <div class="input-group-append">
+                                <button  class=" font-white btn-search">SEARCH</button>
+                            </div>
+                        </div>-->
+
+                    <!--                    <input class="input-search" type="text" placeholder="Key Words" >
+                                        <button class=" font-white btn-search">SEARCH</button>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10" align="center">
+                <div class=" col-xs-6 col-sm-6 col-md-2 cvr-icon-div">
+                    <h4 class="cvr-icons-heading font-white"> <b>CHINA</b> <br>Jobs </h4>
+                    <img src="assets/images/BeijingButtonImage.jpg" class="cvr-icon">
+
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>KOREA</b> <br>Jobs </h4>
+                    <img src="assets/images/KoreaButtonImage.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>TAIWAN</b> <br>Jobs </h4>
+                    <img src="assets/images/TaiwanButtonImage.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>MALAYSIA</b> <br>Jobs </h4>
+                    <img src="assets/images/MalaysiaButtonImage.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>VIETNAM</b> <br>Jobs </h4>
+                    <img src="assets/images/VietnamButtonImage.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>MIDDLE EAST</b> <br>Jobs </h4>
+                    <img src="assets/images/MiddleEastButtonImage.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>CHINA</b> <br>Jobs </h4>
+                    <img src="assets/images/HongKong.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>Hong Kong</b> <br>Jobs </h4>
+                    <img src="assets/images/Japan.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>Japan</b> <br>Jobs </h4>
+                    <img src="assets/images/SingaPoreButtonImage.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>SINGA PORE</b> <br>Jobs </h4>
+                    <img src="assets/images/Indo.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading font-white"> <b>INDONESSIA</b> <br>Jobs </h4>
+                    <img src="assets/images/ThaiLandButtonImage.jpg" class="cvr-icon">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2  cvr-icon-div"> 
+                    <h4 class="cvr-icons-heading-all font-white"> <b>ALL</b> <br>Jobs </h4>
+                    <img src="assets/images/AllJobsButtonImage.jpg" class="cvr-icon">
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <select class="cvr-select bg-cvr-select">
+                        <option> All Jobs</option>
+                    </select>
+
+                    <select class="cvr-select bg-cvr-select">
+                        <option>Currency $</option>
+                    </select>
+
+                    <select class="cvr-select bg-cvr-select">
+                        <option> Per Month</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row margin-top-30">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-10">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-2"> </div>
+                    <button class="accordion" style="background-color:white;">
+                        <div class="col-md-8 well-div">
+                            Bhenzhen Training Center ESL Teacher
+                            <br/>
+                            <i class="fa fa-map-marker font-lightgrey"></i> Bhenzhen &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-calendar font-lightgrey"></i> 09-01-2020
+                            <br/>
+                            $3,000 - $4000 /Month
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-15" align="center">
+                <div class="col-md-12">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>Next</button>
+                    <button>Last</button>
+
+                </div>
+            </div>
+
+            <div class="row margin-top-30">
+
+                <div class="col-md-2"> </div>
+                <div class="col-md-8 well-div" style="border-bottom: lightblue 4px solid">
+                    <h4>How It Works</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"> </div>
+                <div class="col-md-8 well-div" >
+
+                    <div class="row">
+                        <div class=" col-xs-6 col-sm-6 col-md-3" align="center">
+                            <br/>
+                            <img src="assets/images/logo4.png" class="footer-logo">
+                            <h5> Apply </h5>
+                            <p style="color:grey">
+                                Choose from function of ESL. Join Broad on your procedure for student age and location
+                            </p>
+                        </div>
+                        <div class=" col-xs-6 col-sm-6 col-md-3" align="center" style="background-color:#d3d3d321;">
+                            <br/>
+                            <img src="assets/images/logo3.png" class="footer-logo">
+                            <h5> Interview </h5>
+                            <p style="color:grey">
+                                Choose from function of ESL. Join Broad on your procedure for student age and location
+                            </p>
+                        </div>
+                        <div class=" col-xs-6 col-sm-6 col-md-3" align="center">
+                            <br/>
+                            <img src="assets/images/logo2.png" class="footer-logo">
+                            <h5> Start Work </h5>
+                            <p style="color:grey">
+                                Choose from function of ESL. Join Broad on your procedure for student age and location
+                            </p>
+                        </div>
+                        <div class=" col-xs-6 col-sm-6 col-md-3" align="center" style="background-color:#d3d3d321;">
+                            <br/>
+                            <img src="assets/images/logo1.png" class="footer-logo">
+                            <h5 style="color:orange"> Free Service </h5>
+                            <p style="color:grey">
+                                Choose from function of ESL. Join Broad on your procedure for student age and location
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row margin-top-30 ">
+                <div class="col-md-12 text-white header2" align="right">
+                    <br/>
+                </div>
+            </div>
+            <div class="row" align="center">
+                <div class="col-md-12  header1 font-white">
+                    <h1 class="margin-top-20-footer" style="font-family: 'Libre Baskerville', serif;"> <b><span class="font-white">TEASHER</span><span class="font-lightblue">VISTA</span></b></h1>
+                    <font size="1px;">
+                    Info@teachervista.com  &nbsp; &nbsp;  
+                    +123 456 77 889  &nbsp; &nbsp; 
+                    Copyright &copy; 2020
+                    </font>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+    </body>
+
+</html>
